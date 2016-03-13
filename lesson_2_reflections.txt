@@ -8,14 +8,22 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+=> add files needed to be committed from working dir to staging area, and may check it again by "git diff --stage", then commit
+(working area might contain more than one logical changes, but you may choose only those you want to commit to staging area, and only commit those in staging area)
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+=> when doing some experimental changes or other change that we don't want to interfere with our master branch, create a new branch for those changes.
 
 How do the diagrams help you visualize the branch structure?
+=> knowing which functions belongs to which branches.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+=> collect all the changes done by two branches ( we want both changes)
+   the diagram can be used to identify the change (commit) history
 
 What are the pros and cons of Git�䏭 automatic merging vs. always doing merges
 manually?
+=> pros : saves some human labor
+   cons : may sometimes cause unwanted merging result?
